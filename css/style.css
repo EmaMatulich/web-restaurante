@@ -1,0 +1,39 @@
+/*estilos para tamaño normal de la página*/
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+header{
+  background-color: #E6E6E6;
+  display: flex;
+}
+a{
+  text-decoration: none;
+}
+
+.img-circular{
+  width: 202px;
+  height: 96px;
+}
+nav{
+  width: 100%;
+  vertical-align:top;
+}
+.nav-bar{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  float: right;
+  margin: 45px 0 45px 0;
+}
+
+ul.nav-bar>li{
+  display: inline;
+  padding: 20px 25px 20px 25px;
+  color: #C33C3A;
+  font-size: 20px;
+}
+
+ul.nav-bar>li>a:link, .nav-bar>li>a:visited .nav-bar>li>a:active{
+  color:#C33C3A;
+}
