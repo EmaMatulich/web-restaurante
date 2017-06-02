@@ -15,11 +15,11 @@ a{
   width: 202px;
   height: 96px;
 }
-nav{
+header>nav{
   width: 100%;
   vertical-align:top;
 }
-.nav-bar{
+header>nav>ul{
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -27,13 +27,19 @@ nav{
   margin: 45px 0 45px 0;
 }
 
-ul.nav-bar>li{
+header>nav>ul>li{
   display: inline;
-  padding: 20px 25px 20px 25px;
   color: #C33C3A;
   font-size: 20px;
 }
 
-ul.nav-bar>li>a:link, .nav-bar>li>a:visited .nav-bar>li>a:active{
+header>nav>ul>li>a{
   color:#C33C3A;
+  padding: 20px 25px 20px 25px;
+  border-radius:20px;
+}
+
+header>nav>ul>li>a:hover{
+  background-color: #C33C3A;
+  color:#E6E6E6;
 }
