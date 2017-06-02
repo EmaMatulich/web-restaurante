@@ -1,25 +1,37 @@
 /*estilos para tamaño normal de la página*/
-body{
+
+body {
   margin: 0;
   font-family: sans-serif;
 }
-header{
-  background-color: #E6E6E6;
-  display: flex;
-}
-a{
+
+a {
   text-decoration: none;
 }
 
-.img-circular{
+
+/*configuraciones del header*/
+
+header {
+  background-color: #E6E6E6;
+  display: flex;
+}
+
+header>a>img {
+  margin-left: 5px;
+}
+
+.img-circular {
   width: 202px;
   height: 96px;
 }
-header>nav{
+
+header>nav {
   width: 100%;
-  vertical-align:top;
+  vertical-align: top;
 }
-header>nav>ul{
+
+header>nav>ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
@@ -27,19 +39,48 @@ header>nav>ul{
   margin: 45px 0 45px 0;
 }
 
-header>nav>ul>li{
+header>nav>ul>li {
   display: inline;
   color: #C33C3A;
   font-size: 20px;
 }
 
-header>nav>ul>li>a{
-  color:#C33C3A;
+header>nav>ul>li>a {
+  color: #C33C3A;
   padding: 20px 25px 20px 25px;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
-header>nav>ul>li>a:hover{
+header>nav>ul>li>a:hover {
   background-color: #C33C3A;
+  color: #E6E6E6;
+}
+
+
+/*Configuraciones del main en la pagina principal*/
+.main{
   color:#E6E6E6;
+}
+.main>section {
+  height: 500px;
+}
+.main>section>h2{
+  margin: 0;
+  padding: 15px 0 15px 10px;
+}
+
+#lugar {
+  background-image: url(../imagenes/home/lugar.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+#menu {
+  background-image: url(../imagenes/home/menu.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+#reservas {
+  background-image: url(../imagenes/home/reservas.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
