@@ -1,20 +1,21 @@
 /*estilos para tamaño normal de la página*/
 
+/*configuraciones basicas del body*/
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;;
 }
 
 a {
   text-decoration: none;
 }
 
-
 /*configuraciones del header*/
-
 header {
   background-color: #E6E6E6;
   display: flex;
+  position: fixed;
+  width:100%;
 }
 
 header>a>img {
@@ -57,30 +58,41 @@ header>nav>ul>li>a:hover {
 }
 
 
-/*Configuraciones del main en la pagina principal*/
+/*Configuraciones de la seccion main en la pagina principal*/
 .main{
-  color:#E6E6E6;
+  color:#777;
+}
+.main>h1,h2,h3,h4,h5,h6{
+  color:#C33C3A;
 }
 .main>section {
   height: 500px;
 }
-.main>section>h2{
-  margin: 0;
-  padding: 15px 0 15px 10px;
+
+.parallax {
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.post-parallax{
+  padding: 50px 80px 50px 80px;
+  text-align: justify;
+}
+.post-parallax>h2{
+  text-align: center;
 }
 
-#lugar {
-  background-image: url(../imagenes/home/lugar.jpg);
-  background-repeat: no-repeat;
-  background-position: left top;
+#lugar{
+    background-image: url(../imagenes/home/lugar.jpg);
 }
 #menu {
   background-image: url(../imagenes/home/menu.jpg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
+
 #reservas {
   background-image: url(../imagenes/home/reservas.jpg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
